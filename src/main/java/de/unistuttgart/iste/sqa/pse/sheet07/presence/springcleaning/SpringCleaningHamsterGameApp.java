@@ -1,4 +1,4 @@
-package de.unistuttgart.iste.sqa.pse.sheet07.presence;
+package de.unistuttgart.iste.sqa.pse.sheet07.presence.springcleaning;
 
 public class SpringCleaningHamsterGameApp {
 

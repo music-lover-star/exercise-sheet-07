@@ -1,17 +1,17 @@
-package de.unistuttgart.iste.sqa.pse.sheet07.presence;
+package de.unistuttgart.iste.sqa.pse.sheet07.presence.springcleaning;
 
 import de.hamstersimulator.objectsfirst.external.simple.game.SimpleHamsterGame;
 
 /**
  * This class is used to solve some easy tasks.
  */
-public class PlainSpringCleaningHamsterGame extends SimpleHamsterGame {
+public class SpringCleaningHamsterGame extends SimpleHamsterGame {
 
 	/**
 	 * Creates a new ArtemisPauleHamsterGame.<br>
 	 * Do not modify!
 	 */
-	public PlainSpringCleaningHamsterGame() {
+	public SpringCleaningHamsterGame() {
 		this.loadTerritoryFromResourceFile("/territories/ArtemisPaule.ter");
 		this.displayInNewGameWindow();
 		game.startGame();
@@ -19,6 +19,6 @@ public class PlainSpringCleaningHamsterGame extends SimpleHamsterGame {
 
 	@Override
 	protected void run() {
-		// Put your code for part A exercise 2 here.
+		// Put your code for part A exercise 3 (e) here.
 	}
 }
