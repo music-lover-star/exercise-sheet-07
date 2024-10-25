@@ -18,7 +18,7 @@ In the presence part you have to use the class you created and in the homework p
     mvn clean compile exec:java@Main
   ```
   ```sh 
-    mvn clean compile exec:java@PlainSpringCleaningHamsterGameApp
+    mvn clean compile exec:java@SpringCleaningHamsterGameApp
   ```
   ```sh 
     mvn clean compile exec:java@CagedHamsterGameApp
