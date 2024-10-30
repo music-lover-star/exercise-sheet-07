@@ -8,7 +8,7 @@ import de.hamstersimulator.objectsfirst.external.simple.game.SimpleHamsterGame;
 public class SpringCleaningHamsterGame extends SimpleHamsterGame {
 
 	/**
-	 * Creates a new ArtemisPauleHamsterGame.<br>
+	 * Creates a new SpringCleaningHamsterGame.<br>
 	 * Do not modify!
 	 */
 	public SpringCleaningHamsterGame() {
@@ -19,6 +19,6 @@ public class SpringCleaningHamsterGame extends SimpleHamsterGame {
 
 	@Override
 	protected void run() {
-		// Put your code for part A exercise 3 (e) here.
+		// Put your code for part A exercise 3 (f), 4 (d) and 4 (e) here.
 	}
 }
