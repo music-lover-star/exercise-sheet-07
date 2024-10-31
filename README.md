@@ -1,5 +1,5 @@
 # About
-This repository contains the classes needed for solving PSE WS 22/23 excercise sheet 7.
+This repository contains the classes needed for solving excercise sheet 7.
 
 The sheet has a presence and a homework part.
 
