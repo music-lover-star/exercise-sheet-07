@@ -7,108 +7,108 @@ package de.unistuttgart.iste.sqa.pse.sheet07.presence.immutable;
  * @version (a version number or a date)
  */
 public class Address {
-	private String streetname;
-	private int streetnumber;
-	private String postalcode;
-	private String cityname;
+	private String streetName;
+	private int streetNumber;
+	private String postalCode;
+	private String cityName;
 
 	/**
-	 * Create a new instance of {@link Address}
+	 * Create a new instance of {@link Address}.
 	 * 
-	 * @param streetname Must not be {@code null} or blank
-	 * @param streetnumber Must be greater than 0.
-	 * @param postalcode Must not be {@code null} or blank
-	 * @param cityname Must not be {@code null} or blank
+	 * @param streetName Must not be {@code null} or blank
+	 * @param streetNumber Must be greater than 0.
+	 * @param postalCode Must not be {@code null} or blank
+	 * @param cityName Must not be {@code null} or blank
 	 */
-	public Address(final String streetname, final int streetnumber, final String postalcode, final String cityname) {
-		if (streetname == null || streetname.isBlank() || streetnumber <= 0 || postalcode == null || postalcode.isBlank() || cityname == null || cityname.isBlank()) {
-			throw new IllegalArgumentException("One of the given arguments vioaltes the preconditions.");
+	public Address(final String streetName, final int streetNumber, final String postalCode, final String cityName) {
+		if (streetName == null || streetName.isBlank() || streetNumber <= 0 || postalCode == null || postalCode.isBlank() || cityName == null || cityName.isBlank()) {
+			throw new IllegalArgumentException("One of the given arguments violates the preconditions.");
 		}
-		this.streetname = streetname;
-		this.streetnumber = streetnumber;
-		this.postalcode = postalcode;
-		this.cityname = cityname;
+		this.streetName = streetName;
+		this.streetNumber = streetNumber;
+		this.postalCode = postalCode;
+		this.cityName = cityName;
 	}
 
 	/**
 	 * 
-	 * @return streetname of the address
+	 * @return street name of the address
 	 */
-	public String getStreetname() {
-		return streetname;
+	public String getStreetName() {
+		return streetName;
 	}
 
 	/**
 	 * 
-	 * @param streetname Must not be {@code null} or blank.
+	 * @param streetName Must not be {@code null} or blank.
 	 */
-	public void setStreetname(final String streetname) {
-		if (streetname == null || streetname.isBlank()) {
+	public void setStreetName(final String streetName) {
+		if (streetName == null || streetName.isBlank()) {
 			throw new IllegalArgumentException("Postalcode is null, but must not be.");
 		}
-		this.streetname = streetname;
+		this.streetName = streetName;
 	}
 
 	/**
 	 * 
-	 * @return streetnumber of the address
+	 * @return street number of the address
 	 */
-	public int getStreetnumber() {
-		return streetnumber;
+	public int getStreetNumber() {
+		return streetNumber;
 	}
 
 	/**
 	 * 
-	 * @param streetnumber Must be greater than 0.
+	 * @param streetNumber Must be greater than 0.
 	 */
-	public void setStreetnumber(final int streetnumber) {
-		if (streetnumber <= 0) {
-			throw new IllegalArgumentException("Streetnumber is less or equal than zero, but must not be.");
+	public void setStreetNumber(final int streetNumber) {
+		if (streetNumber <= 0) {
+			throw new IllegalArgumentException("Street number is less than or equal to zero, but must not be.");
 		}
-		this.streetnumber = streetnumber;
+		this.streetNumber = streetNumber;
 	}
 
 	/**
 	 * 
-	 * @return postalcode of the address.
+	 * @return postal code of the address.
 	 */
-	public String getPostalcode() {
-		return postalcode;
+	public String getPostalCode() {
+		return postalCode;
 	}
 
 	/**
 	 * 
-	 * @param postalcode Must not be {@code null} or blank.
+	 * @param postalCode Must not be {@code null} or blank.
 	 */
-	public void setPostalcode(final String postalcode) {
-		if (postalcode == null || postalcode.isBlank()) {
-			throw new IllegalArgumentException("Postalcode is null, but must not be.");
+	public void setPostalCode(final String postalCode) {
+		if (postalCode == null || postalCode.isBlank()) {
+			throw new IllegalArgumentException("Postal code is null, but must not be.");
 		}
-		this.postalcode = postalcode;
+		this.postalCode = postalCode;
 	}
 
 	/**
 	 * 
-	 * @return cityname of the address
+	 * @return city name of the address
 	 */
-	public String getCityname() {
-		return cityname;
+	public String getCityName() {
+		return cityName;
 	}
 
 	/**
 	 * 
-	 * @param cityname Must not be {@code null} or blank.
+	 * @param cityName Must not be {@code null} or blank.
 	 */
-	public void setCityname(final String cityname) {
-		if (cityname == null || cityname.isBlank()) {
-			throw new IllegalArgumentException("Cityname is null, but must not be.");
+	public void setCityName(final String cityName) {
+		if (cityName == null || cityName.isBlank()) {
+			throw new IllegalArgumentException("City name is null, but must not be.");
 		}
-		this.cityname = cityname;
+		this.cityName = cityName;
 	}
 
 	@Override
 	public String toString() {
-		return "Address [streetname=" + streetname + ", streetnumber=" + streetnumber + ", postalcode=" + postalcode
-				+ ", cityname=" + cityname + "]";
+		return "Address [street name=" + streetName + ", street number=" + streetNumber + ", postal code=" + postalCode
+				+ ", city name=" + cityName + "]";
 	}
 }
