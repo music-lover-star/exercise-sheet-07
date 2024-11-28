@@ -14,14 +14,20 @@ public class Address {
 
 	/**
 	 * Create a new instance of {@link Address}.
-	 * 
+	 *
 	 * @param streetName Must not be {@code null} or blank
 	 * @param streetNumber Must be greater than 0.
 	 * @param postalCode Must not be {@code null} or blank
 	 * @param cityName Must not be {@code null} or blank
 	 */
 	public Address(final String streetName, final int streetNumber, final String postalCode, final String cityName) {
-		if (streetName == null || streetName.isBlank() || streetNumber <= 0 || postalCode == null || postalCode.isBlank() || cityName == null || cityName.isBlank()) {
+		if (streetName == null
+				|| streetName.isBlank()
+				|| streetNumber <= 0
+				|| postalCode == null
+				|| postalCode.isBlank()
+				|| cityName == null
+				|| cityName.isBlank()) {
 			throw new IllegalArgumentException("One of the given arguments violates the preconditions.");
 		}
 		this.streetName = streetName;
@@ -31,7 +37,7 @@ public class Address {
 	}
 
 	/**
-	 * 
+	 *
 	 * @return street name of the address
 	 */
 	public String getStreetName() {
@@ -39,7 +45,7 @@ public class Address {
 	}
 
 	/**
-	 * 
+	 *
 	 * @param streetName Must not be {@code null} or blank.
 	 */
 	public void setStreetName(final String streetName) {
@@ -50,7 +56,7 @@ public class Address {
 	}
 
 	/**
-	 * 
+	 *
 	 * @return street number of the address
 	 */
 	public int getStreetNumber() {
@@ -58,7 +64,7 @@ public class Address {
 	}
 
 	/**
-	 * 
+	 *
 	 * @param streetNumber Must be greater than 0.
 	 */
 	public void setStreetNumber(final int streetNumber) {
@@ -69,7 +75,7 @@ public class Address {
 	}
 
 	/**
-	 * 
+	 *
 	 * @return postal code of the address.
 	 */
 	public String getPostalCode() {
@@ -77,7 +83,7 @@ public class Address {
 	}
 
 	/**
-	 * 
+	 *
 	 * @param postalCode Must not be {@code null} or blank.
 	 */
 	public void setPostalCode(final String postalCode) {
@@ -88,7 +94,7 @@ public class Address {
 	}
 
 	/**
-	 * 
+	 *
 	 * @return city name of the address
 	 */
 	public String getCityName() {
@@ -96,7 +102,7 @@ public class Address {
 	}
 
 	/**
-	 * 
+	 *
 	 * @param cityName Must not be {@code null} or blank.
 	 */
 	public void setCityName(final String cityName) {
