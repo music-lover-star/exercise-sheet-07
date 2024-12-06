@@ -28,18 +28,43 @@ public class LazyHamsterGame extends SimpleHamsterGame {
 	}
 
 	// TODO add documentation with contracts here
-	public void tryToMove() {
-		// TODO Implement here.
+	public void tryToMove() throws TooLazyException {
+		if (Math.random()<0.75{
+			paule.move();
+		}else {
+		 throw new TooLazyException();
+		
 	}
 
-	// TODO add documentation with contracts here
+	
 	public void moveMultipleSteps(int numberOfSteps) {
-		// TODO Implement here.
+		public void moveMultipleSteps(int n) throws NoWayToGoException {
+    int steps = 0;
+    while (steps < n) {
+        if (paule.frontIsClear()) {
+            try {
+                tryToMove();
+                steps++;
+            } catch (TooLazyException e) {
+                paule.write("Komm schon, Paule! Du schaffst das!");
+            }
+        } else {
+            paule.turnLeft();
+            if (!paule.frontIsClear() && !paule.rightIsClear() && !paule.leftIsClear()) {
+                throw new NoWayToGoException();
+       
 	}
-
-	// TODO add documentation with contracts here
+	}
 	public boolean isCaged() {
-		// TODO Implement here.
-		return true; // delete this line, if necessary.
+boolean caged = true;
+    for (int i = 0; i < 4; i++) {
+        if (paule.frontIsClear()) {
+            caged = false;
+            break;
+        }
+        paule.turnLeft();
+    }
+    return caged;
+
 	}
 }
